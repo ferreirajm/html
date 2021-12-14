@@ -70,7 +70,6 @@ section.imagen {
   color: white;
   box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
   background-size: cover;
-  //Posso usa-lo tanto nas id img01 e 02 ou aqui
   background-attachment: fixed;
 }
 
