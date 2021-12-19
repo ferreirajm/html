@@ -7,47 +7,62 @@
     <link rel="shortcut icon" type="image/icon" href="icone/favicon.png"/>
     <title>Criando tabelas</title>
     <style>
+
       body {
         font-family: Arial, Helvetica, sans-serif;
       }
-
       table {
-        width:400px;
-        height: 400px;
+        width: 500px;
         border-collapse: collapse;
-      }/*separed == separado , collapse == colado ou junto as linhas das celdas*/
-
-      td {
-        border: 1px solid black;
-        padding: 8px;
-        text-align: center; /*(right, left, top) Alinhamento horizontal*/
-        vertical-align: top; /*(top, bottom, middle) Alinhamento vertical*/
       }
+      td, th {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      thead {
+        background-color: gray;
+        color: white;
+      }
+      tfoot {
+        background-color: black;
+        color: white;
+      }
+
     </style>
   </head>
   <body>
-    <h1>Alinhando conteúdo em tabelas</h1>
+    <h1>Tabelas grandes</h1>
+    <p>Anatomia para tabelas grandes</p>
+    <!-- TABLE
+            THEAD == Cabeçalho da tabela
+              TR, TD, TH
+            TBODY == Corpo da tabela
+              TR, TD, TH
+            TFOOT == Rodapé da tabela
+              TR, TD, TH
+            -->
     <table>
-      <tr class="linha">
-        <td>A1</td>
-        <td>B1</td>
-        <td>C1</td>
-      </tr>
-      <tr>
-        <td>A2</td>
-        <td>B2</td>
-        <td>C2</td>
-      </tr>
-      <tr>
-        <td>A3</td>
-        <td>B3</td>
-        <td>C3</td>
-      </tr>
-      <tr>
-        <td>A4</td>
-        <td>B4</td>
-        <td class="dado">C4</td>
-      </tr>
+
+      <thead>
+        <tr>
+          <th>Estado</th>
+          <th>População</th>
+        </tr>
+      </thead>
+
+      <tbody>
+          <tr>
+            <td>São Paulo</td>
+            <td>45,919,049</td>
+          </tr>
+      </tbody>
+
+      <tfoot>
+          <tr>
+            <th>Total de Habitantes</th>
+            <td>00000</td>
+          </tr>
+      </tfoot>
     </table>
   </body>
 </html>
