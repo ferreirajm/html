@@ -7,17 +7,26 @@
     <link rel="shortcut icon" type="image/icon" href="icone/favicon.png"/>
     <title>Criando tabelas</title>
     <style>
-      body {font-family: Arial, Helvetica, sans-serif;}
-      table {width:400px;
-             border-collapse: collapse;}/*separed == separado , collapse == colado ou junto as linhas das celdas*/
-      tr.linha {background-color: gray;}
-      td {border: 1px solid black;
-          padding: 8px;}
-      td.dado {background-color: yellow;}
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      table {
+        width:400px;
+        height: 400px;
+        border-collapse: collapse;
+      }/*separed == separado , collapse == colado ou junto as linhas das celdas*/
+
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center; /*(right, left, top) Alinhamento horizontal*/
+        vertical-align: top; /*(top, bottom, middle) Alinhamento vertical*/
+      }
     </style>
   </head>
   <body>
-    <h1>Minha primeira tabela</h1>
+    <h1>Alinhando conteúdo em tabelas</h1>
     <table>
       <tr class="linha">
         <td>A1</td>
