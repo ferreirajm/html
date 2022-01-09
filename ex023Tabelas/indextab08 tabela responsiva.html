@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" type="image/icon" href="#"/>
+    <link rel="stylesheet" type="text/css" href="#"/>
+    <title>Agrupando colunas com colgroup</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      table {
+        width: 600px;
+        padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th, td {
+        border: 1px solid black;
+      }
+      .bg {
+        background-color: gray;
+        color: white;
+      }
+      .bg2 {
+        background-color: gray;
+        color: white;
+        text-align: left;
+      }
+      .st {
+        font-weight: bold;
+      }
+
+      col.carea{
+        background-color: yellow;
+      }
+
+      col.cgrupo {
+        background-color: green;
+      }
+
+    </style>
+  </head>
+    <body>
+      <h1>Escopo de grupo</h1>
+
+      <table>
+
+        <colgroup>
+          <col class="carea">
+          <col class="cdisciplina">
+          <col class="cgrupo" span="2">
+          <col class="cmedia">
+        </colgroup>
+
+        <tr class="bg">
+          <th rowspan="2" scope="col">Àrea</th>
+          <th rowspan="2" scope="col">Disciplina</th>
+          <th colspan="2" scope="colgroup">Notas</th>
+          <th rowspan="2" scope="col">Média</th>
+        </tr>
+        <tr class="bg">
+          <th>Nota 1</th>
+          <th>Nota 2</th>
+        </tr>
+        <tr>
+          <th rowspan="4" scope="rowgroup">Exatas</th>
+          <td>Matemática</td>
+          <td>0,0</td>
+          <td>0,0</td>
+          <td>0,0</td>
+        </tr>
+        <tr>
+          <td>Física</td>
+          <td>0,0</td>
+          <td>0,0</td>
+          <td>0,0</td>
+        </tr>
+        <tr>
+          <td>Química</td>
+          <td>0,0</td>
+          <td>0,0</td>
+          <td>0,0</td>
+        </tr>
+        <tr>
+          <td>Biologia</td>
+          <td>0,0</td>
+          <td>0,0</td>
+          <td>0,0</td>
+        </tr>
+        <tr class="bg2">
+          <th colspan="4" scope="row">Média de Exatas</th>
+          <td class="st">0,0</td>
+        </tr>
+        <tr>
+          <th rowspan="2" scope="rowgroup">Humanas</th>
+          <td>História</td>
+          <td>0,0</td>
+          <td>0,0</td>
+          <td>0,0</td>
+        </tr>
+        <tr>
+          <td>Geografia</td>
+          <td>0,0</td>
+          <td>0,0</td>
+          <td>0,0</td>
+        </tr>
+        <tr class="bg2">
+          <th colspan="4" scope="row">Média de Humanas</th>
+          <td class="st">0,0</td>
+        </tr>
+
+      </table>
+    </body>
+</html>
