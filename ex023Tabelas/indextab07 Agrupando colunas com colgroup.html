@@ -31,11 +31,29 @@
       .st {
         font-weight: bold;
       }
+
+      col.carea{
+        background-color: yellow;
+      }
+
+      col.cgrupo {
+        background-color: green;
+      }
+
     </style>
   </head>
     <body>
       <h1>Escopo de grupo</h1>
+
       <table>
+
+        <colgroup>
+          <col class="carea">
+          <col class="cdisciplina">
+          <col class="cgrupo" span="2">
+          <col class="cmedia">
+        </colgroup>
+
         <tr class="bg">
           <th rowspan="2" scope="col">Àrea</th>
           <th rowspan="2" scope="col">Disciplina</th>
