@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iframe ex030</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            iframe{
+                width: 95vw;
+                border: 2px solid black;
+                height: 400px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Tornando iframe mais seguros.</h1>
+        
+        <p>.</p>
+        <ul>
+            <li><a href="paginasextras/page.html" target="frame1">Primeira pagina</a></li>
+            <li><a href="paginasextras/page02.html" target="frame1">Segunda pagina</a></li>
+            <li><a href="paginasextras/page03.html" target="frame1">Terceira pagina</a></li>
+        </ul>
+        <h2>Meu site principal</h2>
+        <p>Paragrafo de teste para captura de dados num iframe.</p>
+        
+        <iframe src="paginasextras/page04.html" id="tela" name="frame1" frameborder="1" 
+        referrerpolicy="no-referrer">
+            Infelizmente seu navegador não é compatível com isso.
+        </iframe>
+
+        <p>Dentro da tag = iframe: usamos dois parametros para torná-lo mais
+            seguro que são: sandbox="sandbox" e o referrerpolicy="no-referrer-when-downgrade"
+            ou simplesmente: referrerpolicy="no-referrer"
+
+            o sandbox: Não permite a captura de dados como por exemplo um formulario. Ouseja: Todas as seguranças ao maximo.
+            o sandbox: Con segurança media teremos: Em caso que seja necessária a captura de informações e script necessarios de um site.
+                        sandbox="allow-same-origin" = Conteudo da mesma origem
+                        sandbox="allow-forms" = Permitir formularios.
+                        sandbox="allow-script" = Permitir script. 
+                        ou simplesmente: sandbox="allow-same-origin allow-forms allow-script"
+                        (Todas as outras açoes de seguranças estarão ligadas.)
+            o referrerpolicy: O que esta carregado dentro do iframe não coletara nenhuma informação do usuario.
+        </p>
+    </body>
+</html>
