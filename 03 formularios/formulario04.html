@@ -8,12 +8,19 @@
     <body>
         <h1>Formularios Caixas especiais</h1>
         <p>texto, senha e outros.</p>
-        <form action="cadastro.php" method="POST" autocomplete="off">
-            <p><label for="inome">Nome: </label>
-                <input type="text" name="nome" id="inome"/></p>
-            <p><label for="isobrenome">SobreNome: </label>
-                <input type="text" name="sobrenome" id="isobrenome"></p>
-            <p><input type="submit" value="Enviar"/></p>
+        <form action="" method="POST" autocomplete="off">
+            <p>
+                <label for="iusuario">Usuario: </label>
+                <input type="text" name="usuario" id="iusuario" required minlength="5" size="20" placeholder="Nome de Usuario" autocomplete="username" />
+            </p>
+            <p>
+                <label for="isenha">Senha: </label>
+                <input type="password" name="senha" id="isenha" required minlength="8" maxlength="10" placeholder="Senha do Usuario" autocomplete="current-password"/>
+            </p>
+            <p>
+                <input type="submit" value="Enviar"/>
+                <input type="reset" value="Limpar"/>
+            </p>
         </form>
     </body>
 </html>
