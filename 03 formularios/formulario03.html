@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <h1>Formularios Metodos POST e GET</h1>
+        <p>Criando nosso primeiro formulario.</p>
+        <form action="cadastro.php" method="POST" autocomplete="off">
+            <p><label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome"/></p>
+            <p><label for="isobrenome">SobreNome: </label>
+                <input type="text" name="sobrenome" id="isobrenome"></p>
+            <p><input type="submit" value="Enviar"/></p>
+        </form>
+    </body>
+</html>
+
+<!--
+
+    GET metodo padrão de envio. Sai na url do navegador.
+        * Este metodo é bom ser usado: Quando vocÊ não pede dados sensiveis
+        Tipo: Senha, Cartão de Credito, Conta, 
+        * Você pode usa-ló para: Um nome, uma peça, uma cor, um artigo etc...
+        * Este metodo permite enviar até 3000bits de informação e 
+        só por ele podemos enviar links que sejam compartilhaveis. tipo
+        copiar um link de uma busca e enviar para uma pessoa.
+        * Este metodo tampouco permite o envio de imagens. Caso deseje
+        fazer isso é melhor usar o POST
+
+    POST não permite que os valores saiam na url.
+        * Este metodo não quer dizer que é seguro, porem não coloca os dados
+        na cara dos usuario. Para ter accesso aos dados deveriamos inspecionar
+        a pagina.
+        * Porem é usado para dados mais sensiveis.
+        * Metodo post. Permite enviar acima de 3000 bits.
+
+-->
