@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <h1>Formularios Testando en diferentes navegadores.</h1>
+        <p>Como se comporta o codigo em outros navegadores.</p>
+        <form action="" method="POST" autocomplete="off">
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" required minlength="10" size="50" placeholder="Nome Completo" autocomplete="name" />
+            </p>
+            <p>
+                <label for="imedia">Média: </label>
+                <input type="number" name="media" id="imedia" min="0" max="10" placeholder="De 0 a 10" step="0.5"/>
+            </p>
+            <p>
+                <label for="imes">Periodo Letivo</label>
+                <input type="month" name="mes" id="imes" value="2022"/>
+            </p>
+            <p>
+                <label for="idia">Dia da Prova: </label>
+                <input type="date" name="dia" id="idia">
+            </p>
+            <p>
+                <label for="ihora">Hora da Prova: </label>
+                <input type="time" name="hora" id="ihora"/>
+            </p>
+            <p>
+                <input type="submit" value="Enviar"/>
+                <input type="reset" value="Limpar"/>
+            </p>
+
+        </form>
+    </body>
+</html>
