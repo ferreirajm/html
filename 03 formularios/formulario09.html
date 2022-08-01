@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <h1>Formularios Colors</h1>
+        <p>Controle Color, Range e File.</p>
+        <form action="" method="POST" autocomplete="on">
+            <p>
+                <label for="icor">Cor: </label>
+                <input type="color" name="cor" id="icor" value="#00ff00"/>
+            </p>
+            <p>
+                <label for="inivel">Nivel de Satisfação: </label>
+                <input type="range" name="nivel" id="inivel" min="1" max="5" value="2"/>
+            </p>
+            <p>
+                <label for="ifoto">Foto de Perfil: </label>
+                <input type="file" name="foto" id="ifoto"/> <!--
+                    Ao usar o input com o tipo FILE é recomendavel usar
+                    o metodo de envio POST.
+                -->
+            </p>
+            <p>
+                <input type="submit" value="enviar"/>
+                <input type="reset" value="Limpar"/>
+            </p>   
+        </form>
+    </body>
+</html>
