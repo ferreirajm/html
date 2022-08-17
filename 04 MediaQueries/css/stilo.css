@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
+  font-family: Arial, Helvetica, sans-serif;
   background-color: white;
 }
