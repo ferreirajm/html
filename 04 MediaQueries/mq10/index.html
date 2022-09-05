@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" type="text/css" href="css/estilo.css" media="all"/>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
         <link rel="shortcut icon" type="image/icon" href="#"/>
-        <link rel="stylesheet" type="text/css" href="css/MQestilo.css" />
+        <link rel="stylesheet" type="text/css" href="css/MQestilo.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+
     </head>
-    <body>
+    <body onresize="mudouTamanho()">
         <header>
             <h1>Meu Site</h1>
             <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
@@ -44,6 +45,13 @@
             </article>
         </main>
         <script>
+            function mudouTamanho() {
+                if (window.innerWidth >= 768){
+                    itensMenu.style.display = 'block';
+                } else {
+                    itensMenu.style.display = 'none';
+                }
+            }
             function clickMenu() {
                 if (itensMenu.style.display == 'block') {
                     itensMenu.style.display = 'none';
