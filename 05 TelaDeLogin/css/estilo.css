@@ -90,11 +90,13 @@ div.campo > input {
   background-color: yellow;
   font-size: 1em;
   width: calc(100% - 50px);
-  transform: translateY(-14px);
+  /*transform: translateY(-14px); FAÇA SEMPRE O TRANSFORM COMO ULTIMA
+  LINHA DAS CONFIGURAÇÕES DA SUA CSS NO CAMPO QUE ESTEJA CONFIGURANDO*/
   height: 100%;
   border: 0px;
   border-radius: 5px;
   padding: 4px;
+  transform: translateY(-14px);
 }
 
 div.campo > input:focus-within {
